@@ -1,0 +1,42 @@
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  background-color: black;
+  font-family: sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.section-aboutUs {
+  /* background-color: rgb(109, 109, 109); */
+  height: 385vh;
+}
+
+.section-services {
+  border: solid 3px;
+  /* background-color: rgb(189, 95, 95); */
+  height: 200vh;
+}
+
+.section-product {
+  background-color: rgb(85, 236, 65);
+}
+
+section {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  height: 200vh;
+  border: solid 1px;
+  color: white;
+}
+
+span {
+  color: white;
+  position: fixed;
+}

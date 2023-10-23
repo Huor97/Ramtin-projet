@@ -1,0 +1,375 @@
+.clear {
+  clear: both;
+}
+
+img {
+  max-width: 100%;
+  border: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+  transition: all 0.4s ease-in-out;
+}
+
+a:focus,
+a:active,
+a:visited,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+a:hover {
+  color: #e73700;
+}
+
+/* Titre */
+h2 {
+  margin-bottom: 48px;
+  padding-bottom: 16px;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 700;
+  position: relative;
+  text-transform: capitalize;
+}
+
+h3 {
+  margin: 0 0 0px;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: left;
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-family: "Acumin Variable Concept", serif;
+}
+
+button {
+  outline: none !important;
+}
+
+/* Style du titre */
+.line-title {
+  position: relative;
+  width: 400px;
+}
+
+.line-title::before,
+.line-title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4px;
+  border-radius: 2px;
+}
+
+.line-title::before {
+  width: 100%;
+  background: #f2f2f2;
+}
+
+.line-title::after {
+  width: 32px;
+  background: #e73700;
+}
+
+/* Section de jeu */
+.game-section {
+  padding: 0px 0px;
+  position: relative;
+  top: 130vh;
+  width: 100vw;
+  height: 100vh;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.game-section .owl-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.game-section .item {
+  width: 297px;
+  height: 480px;
+  background: #343434 no-repeat center center / cover;
+  border-radius: 16px;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  /* peut-être modifier pour spacement des images */
+  margin: 0 15px 0 0;
+}
+
+.game-section .item.active {
+  width: 500px;
+  box-shadow: 12px 40px 40px rgba(0, 0, 0, 0.25);
+}
+
+.game-section .item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
+}
+
+.game-section .item-desc {
+  padding: 12px 24px;
+  color: #fff;
+  height: 50%;
+  position: relative;
+  bottom: -90px;
+  z-index: 1;
+  text-align: left;
+
+  overflow: hidden;
+  transform: translateY(calc(100%));
+  transition: all 0.4s ease-in-out;
+}
+
+.game-section .item.active .item-desc h3 {
+  transform: translateY(0);
+}
+
+.game-section .item.active .item-desc {
+  transform: none;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.game-section .item-desc p {
+  position: relative;
+  top: 5;
+  opacity: 0;
+  color: #fff;
+  transform: translateY(32px);
+  transition: all 0.4s ease-in-out 0.2s;
+  text-align: left;
+
+  margin: 0;
+  font-size: 20px;
+}
+
+.game-section .item.active .item-desc p {
+  opacity: 1;
+  transform: translateY(0);
+  text-align: justify;
+  margin: 0;
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-family: "Acumin Variable Concept", serif;
+}
+
+/* Styles responsifs */
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .game-section {
+    padding: 50px 30px;
+  }
+
+  .game-section .item {
+    margin: 0 12px;
+    width: 260px;
+    height: 360px;
+  }
+
+  .game-section .item.active {
+    width: 400px;
+  }
+
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 46px));
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  h2 {
+    margin-bottom: 32px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .line-title {
+    width: 330px;
+  }
+
+  .game-section {
+    padding: 50px 30px 40px;
+  }
+
+  .game-section .item {
+    margin: 0 12px;
+    width: 240px;
+    height: 330px;
+  }
+
+  .game-section .item.active {
+    width: 360px;
+  }
+
+  .game-section .item-desc {
+    transform: translateY(calc(100% - 42px));
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    margin: 0 0 8px;
+    font-size: 19px;
+    line-height: 24px;
+  }
+
+  .line-title {
+    width: 250px;
+  }
+
+  .game-section {
+    padding: 30px 15px 20px;
+  }
+
+  .game-section .item {
+    margin: 0 10px;
+    width: 200px;
+    height: 280px;
+  }
+
+  .game-section .item.active {
+    width: 270px;
+    box-shadow: 6px 10px 10px rgba(0, 0, 0, 0.25);
+  }
+}
+/* ===================================================================== */
+
+.container-services {
+  position: relative;
+  top: 120vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* background-color: rgb(0, 0, 0); */
+}
+.hedden {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.container-services.visible {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fixed {
+  position: fixed;
+  top: 10vh;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #000;
+}
+
+/* .service-hedden {
+  display: none;
+} */
+.services {
+  width: 18vw;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* z-index: 9999; */
+}
+
+.service {
+  background-color: #4f6073;
+  width: 95%;
+  height: 60%;
+  padding: 15px;
+}
+
+.description {
+  display: none;
+  color: #fff;
+}
+
+.service:hover {
+  background-color: #dfceba;
+  transition: 0.5s ease-in-out;
+  /* width: 95%;
+  height: 60%;
+  padding: 15px; */
+}
+
+.service > img {
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+/* .bottom-title {
+  position: relative;
+  top: 90px;
+} */
+
+.subtitle {
+  height: 30%;
+}
+
+.subtitle > img {
+  width: 90%;
+}
+
+.services > strong {
+  font-size: 3.5rem;
+  color: #4f6073;
+  margin-top: 0.3em;
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-family: serif;
+  /* font-family: "Acumin-Variable-Concept", sans-serif; */
+  /* font-family: "Acumin-Variable-Concept", serif; */
+}
+
+.services:hover strong {
+  color: #dfceba;
+  transition: 0.5s ease-in-out;
+}

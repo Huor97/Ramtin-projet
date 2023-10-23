@@ -1,0 +1,59 @@
+.nav {
+  position: fixed;
+  width: 100vw;
+  height: 20vh;
+  z-index: 999;
+  background-color: rgb(0, 0, 0);
+  background: linear-gradient(to bottom, #000000fb, #000000da, #0000008e);
+  transition: background 0.5s ease;
+}
+
+.about-gradient {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  right: 3.5vw;
+  top: 1vh;
+  z-index: 1;
+  background-color: antiquewhite;
+}
+
+.navbar {
+  position: fixed;
+  right: 0;
+  margin-right: 4vw;
+  text-decoration: none;
+}
+
+.navbar-active {
+  display: none;
+}
+
+.navbar > ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  padding: 12px;
+  list-style: none;
+  border-right: 1px solid;
+  transition: opacity 3s ease-in-out;
+}
+
+.navbar-active ul {
+  opacity: 1;
+}
+
+.navbar > ul > li {
+  margin-bottom: 10px;
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-family: "Acumin Variable Concept", serif;
+  cursor: pointer;
+  color: #4f6073;
+}
+
+.navbar > ul > li:hover {
+  color: #dfceba;
+  transition: 0.5s ease-in-out;
+}

@@ -1,0 +1,160 @@
+.container-aboutUs {
+  width: 100vw;
+
+  /* height: 50vh; */
+}
+
+.langue {
+  position: fixed;
+  top: 0;
+  left: 45vw;
+  margin: 0;
+  padding: 0;
+  z-index: 999;
+}
+
+.langue-change {
+  background: blanchedalmond;
+  border: none;
+  font-size: 15px;
+  font-weight: bold;
+  width: 200px;
+  height: 70px;
+  font-family: "Acumin-Variable-Concept", sans-serif;
+  font-family: "Acumin-Variable-Concept", serif;
+}
+
+.hedden-langue {
+  display: none;
+}
+
+.logo {
+  position: relative;
+  width: 20vw;
+  top: 40vh;
+  /* left: 40vw; */
+  z-index: 4000;
+}
+
+.fixed-logo {
+  position: fixed;
+  width: 20vw;
+  top: 5vh;
+  /* left: 40vw; */
+  z-index: 4000;
+}
+
+img {
+  width: 100%;
+}
+
+.container-scrolling {
+  position: relative;
+  width: 5vw;
+  top: 65vh;
+  left: 48vw;
+}
+
+.arrow-hidden {
+  display: none;
+}
+.container-arrow,
+.container-scrolldown {
+  width: 5vw;
+}
+
+.about-us-description {
+  position: relative;
+  width: 60vw;
+  left: 27vw;
+  top: 160vw;
+}
+
+.about-us-contact {
+  position: relative;
+  width: 15vw;
+  left: 27vw;
+  top: 160vw;
+  z-index: 9999;
+}
+
+.fixed-contact {
+  position: fixed;
+  width: 15vw;
+  left: 27vw;
+  top: 3vw;
+  z-index: 9999;
+}
+
+/* .title-aboutUs,
+.title-fixed-logo {
+  font-weight: bold;
+  font-size: 50px;
+  padding: 0px 1%;
+  transition: right 2s ease;
+  font-family: "Acumin-Variable-Concept", sans-serif;
+  font-family: "Acumin-Variable-Concept", serif;
+}
+
+.title-aboutUs {
+  position: relative;
+  top: 40vh;
+  right: 50vw;
+  transform: translateX(50vw);
+}
+
+.title-fixed-logo {
+  position: fixed;
+  width: 30%;
+  top: 10px;
+  right: 72vw;
+} */
+
+/*.title-fixed-logo.active {
+  top: 10px;
+  transform: translate(
+    -50%,
+    0
+  );
+}*/
+
+/* .subtitle,
+.subtitle-fixed-logo {
+  letter-spacing: 0.5rem;
+  padding: 0px 1%;
+  transition: right 2s ease;
+  font-family: "Acumin-Variable-Concept", sans-serif;
+  font-family: "Acumin-Variable-Concept", serif;
+}
+
+.subtitle {
+  position: relative;
+  top: 35vh;
+  right: 50vw;
+  transform: translateX(50vw);
+}
+
+.subtitle-fixed-logo {
+  position: fixed;
+  width: 30%;
+  top: 80px;
+  right: 72vw;
+} */
+
+/* .about-us {
+  position: relative;
+  top: 200vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 10vw;
+}
+
+.about-us-description {
+  width: 50%;
+}
+
+.about-us-contact {
+  width: 50%;
+} */

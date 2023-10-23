@@ -1,0 +1,38 @@
+.container-products {
+  width: 100vw;
+  height: 80vh;
+  background-color: rgb(0, 0, 0);
+  position: relative;
+  top: 20vh;
+  display: flex;
+
+  flex-direction: column;
+}
+
+.title > h2 {
+  font-family: "Acumin Variable Concept", sans-serif;
+  font-family: "Acumin Variable Concept", serif;
+  
+  margin-bottom: 0;
+  color: #fff;
+}
+
+.fixed-products {
+  width: 100vw;
+  height: 80vh;
+  position: fixed;
+  top: 20vh;
+  display: flex;
+ 
+  flex-direction: column;
+  background-color: rgb(0, 0, 0);
+}
+
+
+
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
